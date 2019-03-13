@@ -1,5 +1,11 @@
 eureka.client.serviceUrl.defaultZone: http://localhost:7777/eureka/
 
+spring:
+  application:
+    name: hello-service
+server:
+  port: 8081
+
 mybatis.type-aliases-package: michael.slf4j.demo.mapper
 spring:
   datasource:
