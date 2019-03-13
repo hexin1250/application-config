@@ -6,14 +6,6 @@ spring:
 server:
   port: 8081
 
-mybatis.type-aliases-package: michael.slf4j.demo.mapper
-spring:
-  datasource:
-    driverClassName: "com.mysql.cj.jdbc.Driver"
-    url: "jdbc:mysql://localhost:3306/michael?useUnicode=true;characterEncoding=utf-8"
-    username: "root"
-    password: "hexin1250"
-
 spring.main.allow-bean-definition-overriding: true
  
 eureka.client:
