@@ -2,11 +2,9 @@ server:
    port: 8081
 
 eureka:
-   instance:
-      hostname: localhost
    client:
       serviceUrl:
-         defaultZone: "http://localhost:7777/eureka/"
+         defaultZone: http://localhost:7777/eureka/
       register-with-eureka: false
       fetch-registry: false
       region: default

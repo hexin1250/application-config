@@ -1,5 +1,6 @@
 server:
    port: 9080
+
 eureka:
    client:
       serviceUrl:
@@ -8,6 +9,8 @@ eureka:
 mybatis:
    type-aliases-package: michael.slf4j.demo.mapper
 spring:
+   application:
+      name: "hello-web-client-service"
    datasource:
       driverClassName: com.mysql.cj.jdbc.Driver
       url: jdbc:mysql://localhost:3306/michael?useUnicode=true;characterEncoding=utf-8
