@@ -13,4 +13,3 @@ eureka:
     register-with-eureka: false
     fetch-registry: false
     region: default
-    registryFetchIntervalSeconds: 5
