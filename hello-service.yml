@@ -5,10 +5,6 @@ eureka:
    client:
       serviceUrl:
          defaultZone: http://localhost:7777/eureka/
-      register-with-eureka: false
-      fetch-registry: false
-      region: default
-      registryFetchIntervalSeconds: 5
 
 mybatis:
    type-aliases-package: michael.slf4j.demo.mapper
