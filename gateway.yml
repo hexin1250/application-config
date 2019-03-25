@@ -12,8 +12,8 @@ spring:
 
 zuul:
    routes:
-      hello-services:
-         url: http://localhost:8081
+      books:
+         url: http://localhost:8084
 
 ribbon:
    eureka:
