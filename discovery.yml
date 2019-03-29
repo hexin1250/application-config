@@ -16,3 +16,5 @@ eureka:
       register-with-eureka: false
       fetch-registry: false
       region: default
+      healthcheck:
+         enabled: true
