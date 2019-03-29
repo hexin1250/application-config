@@ -7,7 +7,8 @@ server:
 
 eureka:
    instance:
-      hostname: localhost
+      hostname: ${vcap.application.uris[0]}
+      instanceId: ${spring.application.name}:${vcap.application.instance_id:${spring.application.instance_id:${server.port}}}
       statusPageUrlPath: ${server.servletPath}/info
       healthCheckUrlPath: ${server.servletPath}/health
    client:
