@@ -1,15 +1,18 @@
 spring:
-  application:
-    name: discovery
+   application:
+      name: discovery
 server:
-  port: 7777
+   port: 7777
+   servletPath: /michael
 
 eureka:
-  instance:
-    hostname: localhost
-  client:
-    serviceUrl:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka
-    register-with-eureka: false
-    fetch-registry: false
-    region: default
+   instance:
+      hostname: localhost
+      statusPageUrlPath: ${server.servletPath}/info
+      healthCheckUrlPath: ${server.servletPath}/health
+   client:
+      serviceUrl:
+         defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka
+      register-with-eureka: false
+      fetch-registry: false
+      region: default
