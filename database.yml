@@ -1,0 +1,14 @@
+server:
+   port: 5001
+
+spring:
+   application:
+      name: "db-service"
+   datasource:
+      driverClassName: com.mysql.cj.jdbc.Driver
+      url: "jdbc:mysql://localhost:3306/michael?useUnicode=true;characterEncoding=utf-8"
+      username: springuser
+      password: springuser
+   jpa:
+      hibernate:
+         ddl-auto:create
