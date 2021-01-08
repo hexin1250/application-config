@@ -3,7 +3,7 @@ server:
 
 spring:
    application:
-      name: "db-service"
+      name: "investment"
    datasource:
       driverClassName: com.mysql.cj.jdbc.Driver
       url: "jdbc:mysql://localhost:3306/michael?useUnicode=true;characterEncoding=utf-8"
