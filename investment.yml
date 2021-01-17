@@ -1,6 +1,5 @@
 server:
    port: 1601
-
 spring:
    application:
       name: "investment"
@@ -14,3 +13,7 @@ spring:
    jpa:
       hibernate:
          ddl-auto:create
+      properties:
+         hibernate:
+            jdbc:
+               time_zone: "Asia/Shanghai"
