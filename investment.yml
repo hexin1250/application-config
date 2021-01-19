@@ -11,7 +11,6 @@ spring:
    main:
       allow-bean-definition-overriding: true
    jpa:
-      database-platform: org.hibernate.dialect.MySQLDialect 
       database: mysql
       hibernate:
          ddl-auto: create
