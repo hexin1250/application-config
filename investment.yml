@@ -5,7 +5,7 @@ spring:
       name: "investment"
    datasource:
       driverClassName: com.mysql.cj.jdbc.Driver
-      url: "jdbc:mysql://CHs-MacBook-Pro.local:3306/investment?useUnicode=true;characterEncoding=utf-8"
+      jdbc-url: "jdbc:mysql://CHs-MacBook-Pro.local:3306/investment?useUnicode=true;characterEncoding=utf-8"
       username: springuser
       password: springuser
    main:
